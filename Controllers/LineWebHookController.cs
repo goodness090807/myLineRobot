@@ -20,7 +20,7 @@ namespace isRock.Template
 
         public LineWebHookController(IConfiguration configuration)
         {
-            _mongodbConnectString = configuration.GetValue<string>("mongodbConnectString");
+            _mongodbConnectString = configuration.GetValue<string>("MONGODB_URI");
             _ChannelAccessToken = configuration.GetValue<string>("ChannelAccessToken");
         }
 
